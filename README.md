@@ -38,7 +38,7 @@ A second full-screen pass makes every frame look painted on paper. It applies a 
 
 ## Scene
 
-A round clearing with trees, clover bushes, rocks and flowers, lit by a warm sun and two coloured firefly lights. The camera slowly orbits for the turnaround. The hero is a cube-pet fox from Kenney. I also included a bunny, cat, chick and a few other animals, which can be swapped in from a menu.
+A round clearing with trees, clover bushes, rocks and flowers, lit by a warm sun and two coloured firefly lights. The camera slowly orbits for the turnaround. The hero is a cube-pet fox from Kenney, but the hero is **swappable**: in Unity, open the **HW2 → Hero Animal** menu and pick a bunny, fox, cat, deer, chick, panda, penguin or koala. The scene rebuilds automatically with the new animal in the middle, using the same bobbing shader and procedural colouring.
 
 ## Interactivity
 
