@@ -21,6 +21,7 @@ public class TurnaroundCapture : MonoBehaviour
 #else
         yield break;
 #endif
+        Application.runInBackground = true;   // keep rendering even if the editor loses focus
         string dir = Path.GetFullPath(Path.Combine(Application.dataPath, "../Recordings/frames"));
         Directory.CreateDirectory(dir);
         foreach (var f in Directory.GetFiles(dir, "*.jpg")) File.Delete(f);
