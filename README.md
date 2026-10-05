@@ -1,4 +1,4 @@
-# HW 2: *3D Stylization*
+# HW 2: 3D Stylization
 
 A tiny clover-forest clearing with a little fox bobbing in the middle! For this project I brought a storybook-style illustration into Unity with toon shading, hatched shadows, sketchy animated outlines and a painted-paper look. Press Space and the whole scene turns into a night-time halftone print.
 
