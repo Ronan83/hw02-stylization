@@ -40,6 +40,8 @@ A second full-screen pass makes every frame look painted on paper. It applies a 
 
 A round clearing with trees, clover bushes, rocks and flowers, lit by a warm sun and two coloured firefly lights. The camera slowly orbits for the turnaround. The hero is a cube-pet fox from Kenney, but the hero is **swappable**: in Unity, open the **HW2 → Hero Animal** menu and pick a bunny, fox, cat, deer, chick, panda, penguin or koala. The scene rebuilds automatically with the new animal in the middle, using the same bobbing shader and procedural colouring.
 
+![swappable hero animals](Images/pets.png)
+
 ## Interactivity
 
 **Press Space** to switch between **Day paper** and **Night print**. Every material swaps to a blue night palette, and the post process becomes a halftone dot pattern on dark-blue paper, like an old printed comic. Press Space again to return to day.
