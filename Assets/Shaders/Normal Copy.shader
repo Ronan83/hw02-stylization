@@ -20,6 +20,7 @@ Shader "Hidden/Normal Copy"
             {
                 float4 vertex : SV_POSITION;
                 float3 viewNormal : NORMAL;
+                float eyeDepth : TEXCOORD0;
             };
 
             sampler2D _MainTex;
@@ -30,12 +31,14 @@ Shader "Hidden/Normal Copy"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.viewNormal = COMPUTE_VIEW_NORMAL;
+                // store linear eye depth so the outline pass can tell when another object is in front
+                o.eyeDepth = -UnityObjectToViewPos(v.vertex).z;
                 return o;
             }
 
             float4 frag(v2f i) : SV_Target
             {
-                return float4(normalize(i.viewNormal) * 0.5 + 0.5, 0);
+                return float4(normalize(i.viewNormal) * 0.5 + 0.5, saturate(i.eyeDepth / 100.0));
             }
             ENDCG
         }
