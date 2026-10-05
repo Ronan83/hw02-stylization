@@ -15,6 +15,10 @@ public class StyleSwitcher : MonoBehaviour
     public Material nightToon;
     public Material nightHero;
 
+    [Header("Extra day/night pairs (same order in both lists)")]
+    public Material[] extraDay;
+    public Material[] extraNight;
+
     static readonly int StyleModeID = Shader.PropertyToID("_StyleMode");
     bool night;
 
@@ -26,10 +30,13 @@ public class StyleSwitcher : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(toggleKey))
-        {
-            night = !night;
-            Apply();
-        }
+            Toggle();
+    }
+
+    public void Toggle()
+    {
+        night = !night;
+        Apply();
     }
 
     void Apply()
@@ -50,11 +57,17 @@ public class StyleSwitcher : MonoBehaviour
         {
             if (m == dayToon) return nightToon;
             if (m == dayHero) return nightHero;
+            if (extraDay != null)
+                for (int i = 0; i < extraDay.Length && i < extraNight.Length; i++)
+                    if (m == extraDay[i]) return extraNight[i];
         }
         else
         {
             if (m == nightToon) return dayToon;
             if (m == nightHero) return dayHero;
+            if (extraNight != null)
+                for (int i = 0; i < extraNight.Length && i < extraDay.Length; i++)
+                    if (m == extraNight[i]) return extraDay[i];
         }
         return m;
     }

@@ -5,12 +5,12 @@ Shader "Hidden/Paper Post"
     Properties
     {
         _MainTex ("Source", 2D) = "white" {}
-        _Tint ("Paper Tint", Color) = (1.0, 0.95, 0.86, 1)
-        _TintStrength ("Tint Strength", Range(0, 1)) = 0.35
-        _Saturation ("Saturation", Range(0, 2)) = 0.9
+        _Tint ("Paper Tint", Color) = (1.0, 0.98, 0.88, 1)
+        _TintStrength ("Tint Strength", Range(0, 1)) = 0.25
+        _Saturation ("Saturation", Range(0, 2)) = 1.05
         _GrainStrength ("Paper Grain Strength", Range(0, 1)) = 0.25
         _GrainScale ("Paper Grain Scale (px)", Float) = 3
-        _VignetteColor ("Vignette Color", Color) = (0.35, 0.12, 0.16, 1)
+        _VignetteColor ("Vignette Color", Color) = (0.10, 0.16, 0.22, 1)
         _VignetteStrength ("Vignette Strength", Range(0, 1)) = 0.6
         _VignetteRadius ("Vignette Radius", Range(0, 1.5)) = 0.55
         _VignetteSoftness ("Vignette Softness", Range(0.01, 1)) = 0.45

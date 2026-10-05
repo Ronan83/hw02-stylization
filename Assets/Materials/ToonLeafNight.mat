@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ToonBob
-  m_Shader: {fileID: -6465566751694194690, guid: dd9a683d691bc0941bc66c4c88f252a9,
+  m_Name: ToonLeafNight
+  m_Shader: {fileID: -6465566751694194690, guid: f0e60eeea3d44ea4d830f05e95fd9ae3,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -117,9 +117,6 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BobAmplitude: 0.15
-    - _BobSpeed: 3
-    - _BobStepFPS: 8
     - _BumpScale: 1
     - _ClearCoat: 0
     - _ClearCoatMask: 0
@@ -145,7 +142,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ReflectionSource: 0
-    - _RimPower: 3
+    - _RimPower: 4
     - _SHADOWS_SOFT: 0
     - _ShadowScale: 4
     - _Shininess: 1
@@ -163,11 +160,11 @@ Material:
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Highlight: {r: 1.0, g: 0.98, b: 0.97, a: 1}
-    - _Midtone: {r: 0.98, g: 0.7, b: 0.8, a: 1}
+    - _Highlight: {r: 0.155, g: 0.368, b: 0.619, a: 1}
+    - _Midtone: {r: 0.092, g: 0.28800000000000003, b: 0.5640000000000001, a: 1}
     - _RampValues: {r: 0.3, g: 0.6, b: 1, a: 0}
-    - _RimColor: {r: 1.0, g: 1.0, b: 1.0, a: 1}
-    - _Shadow: {r: 0.8, g: 0.42, b: 0.6, a: 1}
+    - _RimColor: {r: 0.6, g: 0.9, b: 1.0, a: 1}
+    - _Shadow: {r: 0.07100000000000001, g: 0.168, b: 0.4485, a: 1}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _Thresholds: {r: 0.2, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []

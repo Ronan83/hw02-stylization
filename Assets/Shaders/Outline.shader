@@ -7,9 +7,9 @@ Shader "Hidden/Stylized Outline"
     {
         _MainTex ("Source", 2D) = "white" {}
         _NormalsBuffer ("Normals Buffer", 2D) = "black" {}
-        _OutlineColor ("Outline Color", Color) = (0.22, 0.07, 0.09, 1)
+        _OutlineColor ("Outline Color", Color) = (0.13, 0.08, 0.20, 1)
         _Thickness ("Thickness (px)", Range(0.5, 5)) = 1.5
-        _DepthThreshold ("Depth Threshold", Range(0.01, 1)) = 0.12
+        _DepthThreshold ("Depth Threshold", Range(0.01, 1)) = 0.05
         _NormalThreshold ("Normal Threshold", Range(0.05, 2)) = 0.5
         _WobbleAmount ("Wobble Amount (px)", Range(0, 8)) = 2.5
         _WobbleScale ("Wobble Noise Scale", Float) = 18
